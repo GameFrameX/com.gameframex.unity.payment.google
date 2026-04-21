@@ -10,6 +10,7 @@ namespace GameFrameX.Payment.Google.Runtime
         void Start()
         {
             _ = typeof(GooglePaymentManager);
+            _ = typeof(GooglePurchaseParams);
             _ = typeof(GooglePlayBilling);
             _ = typeof(PricingPhase);
             _ = typeof(ProductInfo);
