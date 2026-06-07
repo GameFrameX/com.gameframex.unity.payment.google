@@ -39,44 +39,36 @@ This plugin provides a simple and easy-to-use API for integrating Google Play in
 
 ## Quick Start
 
-### 1. Import Plugin
+### Installation
 
-Import `GooglePlayBilling.cs` and related files into your Unity project.
+Edit your Unity project's `Packages/manifest.json` and add the `scopedRegistries` section:
 
-### 2. Configure AndroidManifest.xml
-
-Ensure your AndroidManifest.xml contains the following permission:
-
-```xml
-<uses-permission android:name="com.android.vending.BILLING"/>
-```
-
-### 3. Configure Gradle Build File
-
-Ensure your Gradle build file includes the Google Play Billing Library dependency:
-
-```gradle
-dependencies {
-    implementation 'com.android.billingclient:billing:8.0.0'
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
 }
 ```
 
-### 4. Usage
+`scopes` controls which packages are resolved through this registry. Only packages whose names start with `com.gameframex` will be fetched from it.
 
-Add the `GooglePlayBilling` component to your game scene, or create it dynamically via code:
+Then add the package to `dependencies`:
 
-```csharp
-// Get GooglePlayBilling instance
-GooglePlayBilling billingManager = GooglePlayBilling.Instance;
-
-// Register event listeners
-billingManager.OnInitialized += OnInitialized;
-billingManager.OnProductsQueried += OnProductsQueried;
-billingManager.OnPurchaseCompleted += OnPurchaseCompleted;
-
-// Initialize
-billingManager.Initialize();
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.payment.google": "1.0.0"
+  }
+}
 ```
+
 
 ## Usage Examples
 

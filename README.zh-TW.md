@@ -39,44 +39,36 @@
 
 ## 快速開始
 
-### 1. 匯入插件
+### 安裝
 
-將 `GooglePlayBilling.cs` 和相關檔案匯入到您的 Unity 專案中。
+編輯 Unity 專案的 `Packages/manifest.json`，添加 `scopedRegistries` 部分：
 
-### 2. 設定 AndroidManifest.xml
-
-確保您的 AndroidManifest.xml 包含以下權限：
-
-```xml
-<uses-permission android:name="com.android.vending.BILLING"/>
-```
-
-### 3. 設定 Gradle 建置檔案
-
-確保您的 Gradle 建置檔案包含 Google Play Billing Library 依賴：
-
-```gradle
-dependencies {
-    implementation 'com.android.billingclient:billing:8.0.0'
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
 }
 ```
 
-### 4. 在 Unity 中使用
+`scopes` 控制哪些套件透過此註冊表解析。只有以 `com.gameframex` 開頭的套件才會從這個註冊表取得。
 
-在您的遊戲場景中新增 `GooglePlayBilling` 元件，或者透過程式碼動態建立：
+Then add the package to `dependencies`:
 
-```csharp
-// 取得 GooglePlayBilling 實例
-GooglePlayBilling billingManager = GooglePlayBilling.Instance;
-
-// 註冊事件監聽
-billingManager.OnInitialized += OnInitialized;
-billingManager.OnProductsQueried += OnProductsQueried;
-billingManager.OnPurchaseCompleted += OnPurchaseCompleted;
-
-// 初始化
-billingManager.Initialize();
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.payment.google": "1.0.0"
+  }
+}
 ```
+
 
 ## 使用範例
 

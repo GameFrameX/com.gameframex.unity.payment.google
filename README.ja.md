@@ -39,44 +39,36 @@
 
 ## クイックスタート
 
-### 1. プラグインのインポート
+### インストール
 
-`GooglePlayBilling.cs` と関連ファイルを Unity プロジェクトにインポートします。
+Unity プロジェクトの `Packages/manifest.json` を編集し、`scopedRegistries` セクションを追加してください：
 
-### 2. AndroidManifest.xml の設定
-
-AndroidManifest.xml に以下のパーミッションを含めます：
-
-```xml
-<uses-permission android:name="com.android.vending.BILLING"/>
-```
-
-### 3. Gradle ビルドファイルの設定
-
-Gradle ビルドファイルに Google Play Billing Library の依存関係を含めます：
-
-```gradle
-dependencies {
-    implementation 'com.android.billingclient:billing:8.0.0'
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
 }
 ```
 
-### 4. Unity での使用
+`scopes` は、どのパッケージをこのレジストリから解決するかを制御します。`com.gameframex` で始まるパッケージのみがこのレジストリから取得されます。
 
-ゲームシーンに `GooglePlayBilling` コンポーネントを追加するか、コードから動的に作成します：
+Then add the package to `dependencies`:
 
-```csharp
-// GooglePlayBilling インスタンスを取得
-GooglePlayBilling billingManager = GooglePlayBilling.Instance;
-
-// イベントリスナーを登録
-billingManager.OnInitialized += OnInitialized;
-billingManager.OnProductsQueried += OnProductsQueried;
-billingManager.OnPurchaseCompleted += OnPurchaseCompleted;
-
-// 初期化
-billingManager.Initialize();
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.payment.google": "1.0.0"
+  }
+}
 ```
+
 
 ## 使用例
 
