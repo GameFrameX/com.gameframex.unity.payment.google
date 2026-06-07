@@ -128,6 +128,20 @@ GooglePlayBilling.Instance.QueryPurchases("subs");
 
 자세한 내용은 [CHANGELOG.md](CHANGELOG.md)를 참조하세요.
 
+
+## 의존성
+
+| 패키지 | 설명 |
+|--------|------|
+| `com.gameframex.unity` | 1.1.1 |
+
+## 문서 및 자료
+
+- [문서](https://gameframex.doc.alianblank.com)
+
+## 커뮤니티 및 지원
+
+- QQ 그룹: 467608841 / 233840761
 ## 라이선스
 
 자세한 내용은 [LICENSE.md](LICENSE.md) 파일을 참조하세요.

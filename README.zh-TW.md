@@ -128,6 +128,20 @@ GooglePlayBilling.Instance.QueryPurchases("subs");
 
 詳見 [CHANGELOG.md](CHANGELOG.md)。
 
+
+## 依賴
+
+| 套件 | 說明 |
+|------|------|
+| `com.gameframex.unity` | 1.1.1 |
+
+## 文檔與資源
+
+- [官方文檔](https://gameframex.doc.alianblank.com)
+
+## 社區與支援
+
+- QQ群: 467608841 / 233840761
 ## 開源協議
 
 詳見 [LICENSE.md](LICENSE.md) 檔案。
