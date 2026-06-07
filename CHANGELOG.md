@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.0.0...1.0.1) (2026-06-07)
+
+
+### Bug Fixes
+
+* 补全包规范文件（LICENSE/CHANGELOG/URL 字段/unity 字段） ([8ac13d2](https://github.com/gameframex/com.gameframex.unity.payment.google/commit/8ac13d209c2c1326220474dac1d1c2dd7395ca12))
+
 # 1.0.0 (2025-12-23)
 
 
