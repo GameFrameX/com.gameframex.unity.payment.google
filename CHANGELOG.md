@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.0.1...1.0.2) (2026-07-30)
+
+
+### Bug Fixes
+
+* 更新依赖项版本以确保兼容性 ([b51cda0](https://github.com/gameframex/com.gameframex.unity.payment.google/commit/b51cda0b3ea383f4167867a4d55ecf8ce492a9be))
+
 ## [1.0.1](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.0.0...1.0.1) (2026-06-07)
 
 
