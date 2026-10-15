@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.0.2...1.0.3) (2026-10-15)
+
+
+### Bug Fixes
+
+* **runtime:** Preserve 特性改用全限定名防裁剪 ([f6d6d96](https://github.com/gameframex/com.gameframex.unity.payment.google/commit/f6d6d965d718f15f6bec36e6a8ec8ae0842ee026))
+
 ## [1.0.2](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.0.1...1.0.2) (2026-07-30)
 
 
