@@ -44,6 +44,7 @@ namespace GameFrameX.Payment.Google.Runtime
 
         private static GooglePlayBilling _instance;
 
+        [UnityEngine.Scripting.Preserve]
         public static GooglePlayBilling Instance
         {
             get
