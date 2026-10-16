@@ -36,6 +36,13 @@ namespace GameFrameX.Payment.Google.Runtime
     [UnityEngine.Scripting.Preserve]
     public sealed class GooglePaymentManager : BasePaymentManager
     {
+
+        /// <summary>
+        /// Google Play 渠道唯一标识
+        /// </summary>
+        [UnityEngine.Scripting.Preserve]
+        public const string ChannelId = "google";
+
         private static string ToProductTypeString(PaymentProductType productType)
         {
             return productType == PaymentProductType.Subs ? "subs" : "inapp";

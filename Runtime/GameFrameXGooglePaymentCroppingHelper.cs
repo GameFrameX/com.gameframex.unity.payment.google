@@ -44,6 +44,9 @@ namespace GameFrameX.Payment.Google.Runtime
             _ = typeof(ProductInfo);
             _ = typeof(PurchaseInfo);
             _ = typeof(SubscriptionOffer);
+#if UNITY_ANDROID && !UNITY_EDITOR
+            _ = typeof(GooglePaymentBootstrap);
+#endif
         }
     }
 }

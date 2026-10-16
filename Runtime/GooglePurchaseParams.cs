@@ -52,6 +52,7 @@ namespace GameFrameX.Payment.Google.Runtime
         public GooglePurchaseParams(string productId, string orderId, PaymentProductType productType)
             : base(productId, orderId, productType)
         {
+            ChannelId = GooglePaymentManager.ChannelId;
         }
     }
 }
