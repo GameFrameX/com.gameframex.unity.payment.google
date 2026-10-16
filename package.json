@@ -3,7 +3,7 @@
   "displayName": "Game Frame X Payment Google",
   "category": "Game Frame X",
   "description": "GameFrameX Payment Google — Google Play Billing channel adapter for GameFrameX Payment. Wraps the Google Play Billing Library behind GooglePaymentManager with a simple API to initialize billing, query product details, purchase one-time products and subscriptions, consume consumable purchases, and query purchase history. Includes GooglePlayBilling bindings with ProductInfo, PurchaseInfo, PricingPhase and SubscriptionOffer models, GooglePurchaseParams, and IL2CPP cropping protection. Docs: https://gameframex.doc.alianblank.com\n\nGameFrameX Payment Google — GameFrameX Payment 的 Google Play 支付渠道适配包。通过 GooglePaymentManager 封装 Google Play Billing Library，提供初始化计费、查询商品详情、购买一次性商品与订阅、消耗型商品消耗及查询购买历史的简洁 API。内置含 ProductInfo、PurchaseInfo、PricingPhase、SubscriptionOffer 模型的 GooglePlayBilling 绑定、GooglePurchaseParams 以及 IL2CPP 裁剪保护。文档：https://gameframex.doc.alianblank.com",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "unity": "2019.4",
   "keywords": [
     "Game Frame X"

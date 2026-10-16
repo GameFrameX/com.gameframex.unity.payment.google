@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.0.3...1.1.0) (2026-10-16)
+
+
+### Features
+
+* **google:** 接入支付渠道注册表自注册 ([e09cd3b](https://github.com/gameframex/com.gameframex.unity.payment.google/commit/e09cd3ba588f53df07583eae539b06a4294de1e8))
+
 ## [1.0.3](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.0.2...1.0.3) (2026-10-15)
 
 
