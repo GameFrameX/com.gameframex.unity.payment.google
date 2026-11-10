@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.1.0...1.1.1) (2026-11-10)
+
+
+### Bug Fixes
+
+* **payment.google:** 添加完整 link.xml 防代码裁剪保护 ([72efaf2](https://github.com/gameframex/com.gameframex.unity.payment.google/commit/72efaf2c653c6901255ea2205f515b3e3b901ee6))
+
 # [1.1.0](https://github.com/gameframex/com.gameframex.unity.payment.google/compare/1.0.3...1.1.0) (2026-10-16)
 
 
